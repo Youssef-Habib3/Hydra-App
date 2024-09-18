@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border text-[#ffffff];
+}
+
+body {
+  @apply scroll-smooth;
+}
+
+.center-flex {
+  @apply flex justify-center items-center;
+}
+
+.button-hover:hover {
+  @apply bg-gradient-to-r from-[#C0B7E8] to-[#8176AF];
+}
+
+section,
+footer {
+  @apply py-12;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
